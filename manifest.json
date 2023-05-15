@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Lokesh Quotes",
+  "version": "1.0",
+  "description": "Displays random inspirational quotes on each new tab",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "images/logo.png"
+  },
+  "host_permissions": ["https://api.quotable.io/"],
+  "web_accessible_resources": [
+    {
+      "resources": ["index.js"],
+      "matches": ["https://*/*"]
+    }
+  ]
+}
